@@ -3,8 +3,8 @@ class QuotaMonitor < Formula
 
   desc "Claude Code & Codex CLI quota monitor and reset reminder tool"
   homepage "https://github.com/franksde/quota-monitor"
-  url "https://github.com/franksde/quota-monitor/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "75047dc1bc448268a746af38b6069b516a0f6d7fe9ca8eff65f53a1ddc08f991"
+  url "https://github.com/franksde/quota-monitor/archive/refs/tags/v0.2.2.tar.gz"
+  sha256 "b6ce1c595d62261679bb5ac56754a657023098d09f427cce06be01a4bb482894"
   license "MIT"
 
   depends_on "python@3.11"
@@ -14,6 +14,6 @@ class QuotaMonitor < Formula
   end
 
   test do
-    assert_match "quota_monitor 0.2.1", shell_output("#{bin}/quota-monitor --version")
+    assert_match "quota_monitor 0.2.2", shell_output("#{bin}/quota-monitor --version")
   end
 end
